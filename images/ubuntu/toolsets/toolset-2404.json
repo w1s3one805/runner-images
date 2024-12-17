@@ -28,9 +28,9 @@
             "platform" : "linux",
             "arch": "x64",
             "versions": [
-                "16.*",
                 "18.*",
-                "20.*"
+                "20.*",
+                "22.*"
             ]
         },
         {
@@ -39,17 +39,19 @@
             "arch": "x64",
             "platform" : "linux",
             "versions": [
-                "1.20.*",
                 "1.21.*",
-                "1.22.*"
+                "1.22.*",
+                "1.23.*"
             ],
-            "default": "1.22.*"
+            "default": "1.23.*"
         },
         {
             "name": "Ruby",
             "platform_version": "24.04",
             "arch": "x64",
-            "versions": []
+            "versions": [
+                "3.2.*"
+            ]
         },
         {
             "name": "CodeQL",
@@ -81,7 +83,7 @@
         "ndk": {
             "default": "27",
             "versions": [
-                "24", "25", "26", "27"
+                "26", "27"
             ]
         }
     },
@@ -94,7 +96,7 @@
         {
             "name": "az",
             "versions": [
-                "11.5.0"
+                "12.1.0"
             ]
         }
     ],
@@ -170,6 +172,7 @@
             "ssh",
             "sshpass",
             "sudo",
+            "systemd-coredump",
             "swig",
             "telnet",
             "time",

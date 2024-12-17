@@ -319,7 +319,7 @@ Describe "Conda" {
     }
 }
 
-Describe "Packer" -Skip:((-not (Test-IsUbuntu20)) -and (-not (Test-IsUbuntu22))) {
+Describe "Packer" {
     It "packer" {
         "packer --version" | Should -ReturnZeroExitCode
     }
@@ -354,7 +354,7 @@ Describe "Containers" {
 
 }
 
-Describe "nvm" -Skip:((-not (Test-IsUbuntu20)) -and (-not (Test-IsUbuntu22))) {
+Describe "nvm" {
     It "nvm" {
         "source /etc/skel/.nvm/nvm.sh && nvm --version" | Should -ReturnZeroExitCode
     }
@@ -390,7 +390,7 @@ Describe "yq" {
     }
 }
 
-Describe "Kotlin" -Skip:((-not (Test-IsUbuntu20)) -and (-not (Test-IsUbuntu22))) {
+Describe "Kotlin" {
     It "kapt" {
         "kapt -version" | Should -ReturnZeroExitCode
     }
@@ -407,7 +407,7 @@ Describe "Kotlin" -Skip:((-not (Test-IsUbuntu20)) -and (-not (Test-IsUbuntu22)))
         "kotlinc-jvm -version" | Should -ReturnZeroExitCode
     }
 
-    It "kotlin-dce-js" {
-        "kotlin-dce-js -version" | Should -ReturnZeroExitCode
+    It "kotlinc-js" {
+        "kotlinc-js -version" | Should -ReturnZeroExitCode
     }
 }

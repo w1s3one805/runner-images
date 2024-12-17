@@ -32,9 +32,9 @@
             "platform" : "linux",
             "arch": "x64",
             "versions": [
-                "16.*",
                 "18.*",
-                "20.*"
+                "20.*",
+                "22.*"
             ]
         },
         {
@@ -43,11 +43,11 @@
             "arch": "x64",
             "platform" : "linux",
             "versions": [
-                "1.20.*",
                 "1.21.*",
-                "1.22.*"
+                "1.22.*",
+                "1.23.*"
             ],
-            "default": "1.21.*"
+            "default": "1.23.*"
         },
         {
             "name": "Ruby",
@@ -91,7 +91,7 @@
         "ndk": {
             "default": "27",
             "versions": [
-                "24", "25", "26", "27"
+                "26", "27"
             ]
         }
     },
@@ -105,7 +105,7 @@
         {
             "name": "az",
             "versions": [
-                "11.3.1"
+                "12.1.0"
             ]
         }
     ],
@@ -201,6 +201,7 @@
             "sshpass",
             "subversion",
             "sudo",
+            "systemd-coredump",
             "swig",
             "telnet",
             "time",
@@ -218,12 +219,12 @@
             "debian:10",
             "debian:11",
             "moby/buildkit:latest",
-            "node:16",
             "node:18",
             "node:20",
-            "node:16-alpine",
+            "node:22",
             "node:18-alpine",
             "node:20-alpine",
+            "node:22-alpine",
             "ubuntu:20.04",
             "ubuntu:22.04"
         ],
